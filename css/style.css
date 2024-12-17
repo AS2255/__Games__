@@ -1,0 +1,143 @@
+
+/* general start */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nerko+One&display=swap');
+body {
+    font-family: cursive, "Comfortaa";
+    background-color: #272b30;
+    color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: cursive, "Nerko One";
+    color: #fff ;
+}
+.bg-color{
+    background-color: #32383e;
+}
+a,p,span{
+    color: inherit;
+}
+/* web-scroll start */
+::-webkit-scrollbar {
+    width: .5rem;
+}
+::-webkit-scrollbar-track {
+    background-color: #32383e;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #272b30;
+    border-radius: 50px;
+    box-shadow: 0 0 5px #00000080 inset;
+}
+/* web-scroll end */
+/* end general */
+
+/* games section start*/
+header img{
+    max-height: 30vh;
+    object-fit: cover;
+}
+nav {
+    background-color: #3a497b;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+    margin-top: -1.875rem;
+    margin-inline: auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+nav .navbar-brand img{
+    max-width: 2.5rem;
+}
+nav #logo{
+    color: #fff ;
+}
+#nav-menu li a{
+    color: inherit;
+}
+#nav-menu .nav-item .nav-link.active,
+#nav-menu .nav-item .nav-link:hover{
+    color: #09c;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+/* home start */
+#home .card{
+    cursor:pointer;
+    filter: grayscale(0.7);
+    -webkit-filter: grayscale(0.7);
+    transition:transform 0.5s, filter 0.5s 0.1s;
+    -webkit-transition:transform 0.5s, filter 0.5s 0.1s;
+    -moz-transition:transform 0.5s, filter 0.5s 0.1s;
+    -ms-transition:transform 0.5s, filter 0.5s 0.1s;
+    -o-transition:transform 0.5s, filter 0.5s 0.1s;
+}
+#home .card:hover{
+    transform: scale(1.05);
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+/* home end */
+/* games section end */
+
+/* details sec start */
+.details {
+    background-color: #272729be;
+    backdrop-filter: blur(4px);
+    min-height: 100vh;
+}
+/* details sec end */
+
+/* loading section */
+.loading{
+    position: fixed;
+    inset: 0;
+    background-color: #272b30e3 ;
+
+}
+.loader{
+    position: relative;
+    width: 6.25rem;
+    height: 6.25rem;
+    border-top: 5px solid transparent;
+    border-right: 5px solid #fff;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite reverse;
+    -webkit-animation: rotation 1s linear infinite reverse;
+}
+.loader::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 6.25rem;
+    height: 6.25rem;
+    border-bottom: 5px solid #ff3d00;
+    border-left: 5px solid transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: rotation 0.5s linear infinite ;
+    -webkit-animation: rotation 0.5s linear infinite ;
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* loading section */
